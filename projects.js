@@ -25,7 +25,7 @@ const ios_projects = [
         name: "Shrdded", 
         description: "Local weightlifting communities can share their personal records, interact with other lifters, and participate in competitions.", 
         image_url: "./images/shrdded.png",
-        project_url: "https://github.com/aidenseibel/shrdded-rowdyhacks",
+        project_url: "https://devpost.com/software/shrdded",
         tech_stack: "SwiftUI, Firebase"
     },
     {
