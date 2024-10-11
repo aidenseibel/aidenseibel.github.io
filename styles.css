@@ -10,43 +10,50 @@ body {
     border: 2px solid white;
 }
 
-.project_card_container{
-    width: 250px;
-    min-width: 250px;
+.project_card_container {
+    width: 270px;
+    min-width: 270px;
     height: 400px;
 
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
     align-items: center;
     padding: 10px;
 
     border-radius: 10px;
     border: 2px solid white;
+    overflow: hidden; /* Ensures any overflow from the container is hidden */
 }
 
-.project_card_image_container{
+.project_card_image_container {
     width: 100%;
-    height: 50%;
+    height: 60%;
+    min-height: 60%;
+    overflow: hidden; /* Ensures that the overflowing parts of the image are cropped */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Applies rounding to the container */
 }
 
-.project_card_image{
+.project_card_image_container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 10px;
+    object-fit: cover; /* Ensures the image fills the container */
+    border-radius: 10px; /* Ensures the image respects the rounded corners */
 }
 
-.project_card_text_container{
-    width: 100%;
-    height: 50%;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    /* overflow: hidden; 
-    text-overflow: ellipsis; */
+.project_card_text_container h2 {
+    margin: 15px 0; /* Reduces the vertical margin around the heading */
+    line-height: 1.2; /* Adjust line height to reduce the spacing between lines */
 }
+
+.project_card_text_container p {
+    margin: 10px 0; /* Reduces the vertical margin around the paragraph */
+    font-size: 0.9rem; /* Optional: Adjust font size if needed */
+    line-height: 1.3; /* Adjust line height for tighter text */
+}
+
 
 .scroll_view {
     width: 100%;
@@ -62,32 +69,38 @@ body {
     margin-right: 10px;
 }
 
-
-
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Light.ttf') format('truetype');
+.poppins-light {
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 700;
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     font-style: normal;
 }
 
-
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
 html,body,div,span,a,li,td,th {
-    font-family: 'Poppins', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1, h2, h3 {
