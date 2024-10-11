@@ -38,7 +38,12 @@ const deep_learning_projects = [
         name: "Interpreted Fields", 
         description: "Built multimodal neural networks (Tensorflow/Keras) for classification within TxDOT's information system. Saved $900,000 USD per year from private contractor.", 
         image_url: "./images/txdot_interpreted_fields.png"
-    }
+    },
+    {
+        name: "The Python Engine", 
+        description: "An 1800-strength Python chess engine. Utilized convolutional neural networks to approximate an evaluation function.", 
+        image_url: "./images/python_chess_engine.jpg"
+    },
 ];
 
 // Chess Programming Projects
