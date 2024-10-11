@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.link_container{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.project_card_container{
+    width: 250px;
+    min-width: 250px;
+    height: 400px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.project_card_image_container{
+    width: 100%;
+    height: 50%;
+}
+
+.project_card_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project_card_text_container{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    /* overflow: hidden; 
+    text-overflow: ellipsis; */
+}
+
+.scroll_view {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll_item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+html,body,div,span,a,li,td,th {
+    font-family: 'Poppins', serif;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
