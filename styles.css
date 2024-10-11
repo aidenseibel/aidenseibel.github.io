@@ -4,16 +4,16 @@ body {
 }
 
 .link_container{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .project_card_container {
     width: 270px;
     min-width: 270px;
-    height: 400px;
+    height: 425px;
 
     display: flex;
     flex-direction: column;
@@ -23,6 +23,8 @@ body {
     border-radius: 10px;
     border: 2px solid white;
     overflow: hidden; /* Ensures any overflow from the container is hidden */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the text color the same as the card */
 }
 
 .project_card_image_container {

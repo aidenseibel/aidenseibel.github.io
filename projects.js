@@ -2,33 +2,38 @@
 const ios_projects = [
     {
         name: "CarbonSaurus", 
-        description: "RowdyHacks 2024 Winner. A virtual pet dinosaur keeps users climate aware using a carbon diary, avatar customization, daily quizzes and lessons, and more.", 
-        image_url: "./images/carbonsaurus_image.jpg"
+        description: "RowdyHacks 2024 Winner. A virtual pet dinosaur keeps users climate aware using a carbon diary, avatar customization, news, quizzes, etc.", 
+        image_url: "./images/carbonsaurus.jpg",
+        project_url: "https://devpost.com/software/carbonsaurus",
+        tech_stack: "SwiftUI"
     },
     {
         name: "Freelance (Fiverr)", 
         description: "Private contracts ranging from extensive apps to small bugfixing. Maintained a five star rating across 12 projects in six months.", 
-        image_url: "./images/fiverr.jpg"
+        image_url: "./images/fiverr.jpg",
+        project_url: "https://www.fiverr.com/ajs2003?up_rollout=true",
+        tech_stack: "SwiftUI, Firebase, UIKit"
     },
     {
         name: "Traverse", 
         description: "A peer-to-peer marketplace for renting appliances, equipment, electronics, and more.", 
-        image_url: "./images/traverse.jpg"
+        image_url: "./images/traverse.jpg",
+        project_url: "https://github.com/aidenseibel/Traverse-SwiftUI",
+        tech_stack: "SwiftUI, Firebase"
     },
     {
         name: "Shrdded", 
         description: "Local weightlifting communities can share their personal records, interact with other lifters, and participate in competitions.", 
-        image_url: "./images/shrdded.png"
+        image_url: "./images/shrdded.png",
+        project_url: "https://github.com/aidenseibel/shrdded-rowdyhacks",
+        tech_stack: "SwiftUI, Firebase"
     },
     {
-        name: "Studia", 
-        description: "Generative AI and OCR helps students create study materials for their university classes.", 
-        image_url: "./images/studia.jpeg"
-    },
-    {
-        name: "Combatibles", 
+        name: "Combatible", 
         description: "Friends and family test their knowledge of each other in a fast-paced trivia game.", 
-        image_url: "./images/combatibles.jpg"
+        image_url: "./images/combatibles.jpg",
+        project_url: "https://github.com/aidenseibel/combatible",
+        tech_stack: "SwiftUI, Azure, Django"
     },
 ];
 
@@ -36,13 +41,17 @@ const ios_projects = [
 const deep_learning_projects = [
     {
         name: "Interpreted Fields", 
-        description: "Built multimodal neural networks (Tensorflow/Keras) for classification within TxDOT's information system. Saved $900,000 USD per year from private contractor.", 
-        image_url: "./images/txdot_interpreted_fields.png"
+        description: "Built multimodal neural networks for classification, saving TxDOT $900,000 USD per year from private contractor.", 
+        image_url: "./images/txdot_interpreted_fields.png",
+        project_url: "",
+        tech_stack: "Python, Tensorflow, Pandas, AWS"
     },
     {
         name: "The Python Engine", 
         description: "An 1800-strength Python chess engine. Utilized convolutional neural networks to approximate an evaluation function.", 
-        image_url: "./images/python_chess_engine.jpg"
+        image_url: "./images/python_chess_engine.jpg",
+        project_url: "https://github.com/ABatraCS/Chess-Engine",
+        tech_stack: "Python, Tensorflow"
     },
 ];
 
@@ -51,22 +60,30 @@ const chess_programming_projects = [
     {
         name: "The Python Engine", 
         description: "An 1800-strength Python engine. Utilized convolutional neural networks to approximate an evaluation function.", 
-        image_url: "./images/python_chess_engine.jpg"
+        image_url: "./images/python_chess_engine.jpg",
+        project_url: "https://github.com/ABatraCS/Chess-Engine",
+        tech_stack: "Python, Tensorflow"
     },
     {
         name: "The Java Engine", 
         description: "A purely object-oriented, 2000-strength chess engine written in Java.", 
-        image_url: "./images/java_chess_engine.jpg"
+        image_url: "./images/java_chess_engine.jpg",
+        project_url: "https://github.com/LeviBetsy/HalloqueensGambit",
+        tech_stack: "Java, Rest API"
     },
     {
         name: "The Haskell Engine", 
         description: "A purely functional, 1500-strength chess engine written in Haskell.", 
-        image_url: "./images/haskell_chess_engine.jpg"
+        image_url: "./images/haskell_chess_engine.jpg",
+        project_url: "https://github.com/TU-CSCI2322-FL23/solver-halloqueensgambit",
+        tech_stack: "Haskell"
     },
     {
         name: "The Julia Engine", 
         description: "A 1300-strength chess engine written in Julia.", 
-        image_url: "./images/julia_chess_engine.jpg"
+        image_url: "./images/julia_chess_engine.jpg",
+        project_url: "https://github.com/aidenseibel/julia-chess",
+        tech_stack: "Julia"
     },
 
 ];
@@ -76,19 +93,23 @@ const web_development_projects = [
     {
         name: "hamsterstore", 
         description: "An online marketplace for freelance hamster food vendors.", 
-        image_url: "./images/hamsterstore.jpg"
+        image_url: "./images/hamsterstore.jpg",
+        project_url: "https://github.com/aidenseibel/pet-store",
+        tech_stack: "ExpressJS, Node"
     },
     {
         name: "Personal Website", 
         description: "Well - it's this website. Converted from ExpressJS / Node", 
-        image_url: "./images/pfp.jpg"
+        image_url: "./images/pfp.jpg",
+        project_url: "https://aidenseibel.github.io/",
+        tech_stack: "HTML, JS, CSS"
     }
 ];
 
 // Function to create project cards
 function createProjectCard(project) {
     return `
-        <div class="project_card_container">
+        <a href="${project.project_url}" target="_blank" rel="noopener noreferrer" class="project_card_container">
             <div class="project_card_image_container">
                 <img src="${project.image_url}" alt="${project.name}" />
             </div>
@@ -96,8 +117,9 @@ function createProjectCard(project) {
             <div class="project_card_text_container">
                 <h2>${project.name}</h2>
                 <p style="overflow: hidden; text-overflow: ellipsis;">${project.description}</p>
+                <p style="overflow: hidden; text-overflow: ellipsis;">Tech Stack: ${project.tech_stack}</p>
             </div>
-        </div>
+        </a>
     `;
 }
 
@@ -116,14 +138,15 @@ function loadProjects() {
     });
 
     // Load Deep Learning Projects
-    const dlContainer = document.getElementById('dl-web-projects');
+    const dlContainer = document.getElementById('dl-projects');
     deep_learning_projects.forEach(project => {
         dlContainer.innerHTML += createProjectCard(project);
     });
 
     // Load Web Development Projects
+    const webContainer = document.getElementById('web-projects');
     web_development_projects.forEach(project => {
-        dlContainer.innerHTML += createProjectCard(project);
+        webContainer.innerHTML += createProjectCard(project);
     });
 }
 
