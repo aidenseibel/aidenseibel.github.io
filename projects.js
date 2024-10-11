@@ -95,7 +95,7 @@ const web_development_projects = [
         description: "An online marketplace for freelance hamster food vendors.", 
         image_url: "./images/hamsterstore.jpg",
         project_url: "https://github.com/aidenseibel/pet-store",
-        tech_stack: "ExpressJS, Node"
+        tech_stack: "ExpressJS, Node, MySQL"
     },
     {
         name: "Personal Website", 
