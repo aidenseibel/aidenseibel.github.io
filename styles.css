@@ -27,6 +27,24 @@ body {
     color: inherit; /* Keep the text color the same as the card */
 }
 
+.carbonsaurus_card_container {
+    width: 375px;
+    min-width: 375px;
+    height: 425px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 2px solid white;
+    overflow: hidden; /* Ensures any overflow from the container is hidden */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the text color the same as the card */
+}
+
+
 .project_card_image_container {
     width: 100%;
     height: 60%;

@@ -1,8 +1,8 @@
 // iOS Projects
 const ios_projects = [
     {
-        name: "CarbonSaurus", 
-        description: "RowdyHacks 2024 Winner. A virtual pet dinosaur keeps users climate aware using a carbon diary, avatar customization, news, quizzes, etc.", 
+        name: "Carbonsaurus", 
+        description: "RowdyHacks 2024 Winner! A virtual pet dinosaur keeps users climate aware using a carbon diary, avatar customization, news, quizzes, etc. Released to the App Store on October 16th, 2024!", 
         image_url: "./images/carbonsaurus.jpg",
         project_url: "https://devpost.com/software/carbonsaurus",
         tech_stack: "SwiftUI"
@@ -108,8 +108,14 @@ const web_development_projects = [
 
 // Function to create project cards
 function createProjectCard(project) {
+    if(project.name == "Carbonsaurus"){
+        project_card_class = "carbonsaurus_card_container"
+    }else{
+        project_card_class = "project_card_container"
+    }
+
     return `
-        <a href="${project.project_url}" target="_blank" rel="noopener noreferrer" class="project_card_container">
+        <a href="${project.project_url}" target="_blank" rel="noopener noreferrer" class="${project_card_class}">
             <div class="project_card_image_container">
                 <img src="${project.image_url}" alt="${project.name}" />
             </div>
