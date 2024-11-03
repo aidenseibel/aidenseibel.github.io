@@ -1,8 +1,15 @@
 // iOS Projects
 const ios_projects = [
     {
+        name: "Rowdypay", 
+        description: "*RowdyHacks 2024 First Place Overall Winner!* Rowdypay allows groups of users to manage shared budgets. Users can scan receipts to send automatic payment requests to a shared budget.", 
+        image_url: "./images/rowdypay.jpg",
+        project_url: "https://devpost.com/software/rowdypay",
+        tech_stack: "SwiftUI, REST API, Rust"
+    },
+    {
         name: "Carbonsaurus", 
-        description: "RowdyHacks 2024 Winner! A virtual pet dinosaur keeps users climate aware using a carbon diary, avatar customization, news, quizzes, etc. Released to the App Store on October 16th, 2024!", 
+        description: "*RowdyHacks 2023 3rd Place, Best Design Winner!* A customizable pet dinosaur keeps users climate aware using a carbon diary, news, quizzes, and more. 100+   downloads on the App Store.", 
         image_url: "./images/carbonsaurus.jpg",
         project_url: "https://devpost.com/software/carbonsaurus",
         tech_stack: "SwiftUI"
@@ -108,8 +115,8 @@ const web_development_projects = [
 
 // Function to create project cards
 function createProjectCard(project) {
-    if(project.name == "Carbonsaurus"){
-        project_card_class = "carbonsaurus_card_container"
+    if(project.name == "Carbonsaurus" || project.name == "Rowdypay"){
+        project_card_class = "big_project_card_container"
     }else{
         project_card_class = "project_card_container"
     }

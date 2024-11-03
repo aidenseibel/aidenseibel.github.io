@@ -27,7 +27,7 @@ body {
     color: inherit; /* Keep the text color the same as the card */
 }
 
-.carbonsaurus_card_container {
+.big_project_card_container {
     width: 375px;
     min-width: 375px;
     height: 425px;
