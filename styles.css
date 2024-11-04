@@ -126,3 +126,18 @@ html,body,div,span,a,li,td,th {
 h1, h2, h3 {
     font-weight: 500;
 }
+
+.shimmer_text {
+    font-size: 72px;
+    background: linear-gradient(120deg, #e0e0e0, #313131, #e0e0e0);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
