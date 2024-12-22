@@ -137,6 +137,11 @@ h1, h2, h3 {
     animation: shimmer 3s infinite;
 }
 
+.title_text {
+    font-size: 72px;
+}
+
+
 @keyframes shimmer {
     0% { background-position: 0% 50%; }
     100% { background-position: 200% 50%; }
