@@ -9,7 +9,7 @@ const ios_projects = [
     },
     {
         name: "Carbonsaurus", 
-        description: "*RowdyHacks 2023 3rd Place, Best Design Winner!* A customizable pet dinosaur keeps users climate aware using a carbon diary, news, quizzes, and more. 100+   downloads on the App Store.", 
+        description: "*RowdyHacks 2023 3rd Place, Best Design Winner!* A customizable pet dinosaur keeps users climate aware using a carbon diary, news, quizzes, and more. 250+ downloads on the App Store.", 
         image_url: "./images/carbonsaurus.jpg",
         project_url: "https://devpost.com/software/carbonsaurus",
         tech_stack: "SwiftUI"
